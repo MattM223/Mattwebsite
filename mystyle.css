@@ -1,0 +1,127 @@
+body {                                              /*This specifies the generic formating of my website.*/
+        font-size: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-align: left;
+        margin: 0px;
+}
+#heading {                                          /*This formats the heading to go across the top giving it a gradient background*/                                                
+    justify-content: center;                        /*and as well as the height.*/
+    padding: 10px;
+    background: linear-gradient(rgb(1, 187, 1), darkgreen);
+    display: flex;
+    height: 60px;
+    color: white;
+    text-wrap: nowrap;
+    
+}
+
+nav ul {                            /*This formats the navigation links getting rid of the bullets and giving a darkgreen background.*/
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgreen;
+
+}
+nav li {                            /*This makes the nav li items positioned to the left.*/
+    float: left;
+
+}
+nav li a {                          /*This makes the nav links have a block clickable area, centers and color the text white.*/
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+nav li a:hover {                    /*This gives the clickable blocks a different shade when the mouse hovers over them.*/
+    background-color: green;
+}
+
+main {                              /*This formats the main section with a 70% width so the aside section can take up the other 30%. This also gives the height of the section and centers any text.*/
+    float: left;
+    width: 70%;
+    overflow: auto;
+    text-align: center;
+    
+
+}
+aside {                             /*This formats the aside simalar to the main but with the percentage reversed.*/
+    float: left;
+    width: 30%;
+}
+footer {                            /*This formats the footer to have max width to take up the entire bottom and formats the boxes to have 3 columns of text.*/
+    width: 100%;                    /*This also does background color green, font-size, and colors text white.*/
+    max-height: fit-content;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgreen;
+    font-size: x-small;
+    display: inline-flex;
+    justify-content: space-around;
+    color: white;
+    
+}
+footer div {                    /*This centers the text.*/
+    text-align: center;
+    padding: 10px 10px;
+
+}
+table {                             /*This formats the table to have a darkgreen background, center text, and resizes the table to fit in different window sizes.*/
+    border: darkgreen solid 5px;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+}
+table caption {                     /*This formats the caption to have darkgreen background, white text, and bold larger text.*/
+    background-color: darkgreen;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+tr:nth-child(odd) {                 /*This formats the rows to have alternating colors.*/
+background-color: lightgreen;
+}
+th {                                /*This formats the headers to have bold, large, and white text.*/
+    font-weight: bold;
+    font-size: large;
+    background-color: white;
+}
+span {
+    font-size: larger;              /*This increase the font size of sections designated with span.*/
+}
+form {                              /*This formats the form to have a lightgreen background, darkgreen border, and a scaling width.*/
+    background-color: lightgreen;
+    border: darkgreen 5px solid;
+    max-height: min-content;
+    margin: 10px;
+    padding: 10px;
+    width: 70%;
+}
+form label {
+    text-align: left;
+    display: block;
+}
+input[type=text], input[type=tel], input[type=email] {  /*This formats the input sections to have a border box and creates spaces between the inputs.*/
+    padding: 10px 10px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 4px;
+    width: 90%;
+}
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus {            /*This gives a background to the section currently recieving an input.*/
+    background-color: lightblue;
+}
+input[type=button], input[type=submit] {        /*This formats the submit button to have darkgrey color and white text color and changes the cursor to a pointer.*/
+    background-color: darkgrey;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px 10px;
+    cursor: pointer;
+}
