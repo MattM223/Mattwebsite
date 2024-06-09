@@ -43,7 +43,7 @@ nav li a:hover {                    /*This gives the clickable blocks a differen
 main {                              /*This formats the main section with a 70% width so the aside section can take up the other 30%. This also gives the height of the section and centers any text.*/
     float: left;
     width: 70%;
-    overflow: auto;
+    overflow: hidden;
     text-align: center;
     
 
