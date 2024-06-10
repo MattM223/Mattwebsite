@@ -35,6 +35,7 @@ nav li a {                          /*This makes the nav links have a block clic
     padding: 14px 16px;
     text-decoration: none;
     color: white;
+    font-size: medium;
 }
 nav li a:hover {                    /*This gives the clickable blocks a different shade when the mouse hovers over them.*/
     background-color: green;
@@ -43,7 +44,7 @@ nav li a:hover {                    /*This gives the clickable blocks a differen
 main {                              /*This formats the main section with a 70% width so the aside section can take up the other 30%. This also gives the height of the section and centers any text.*/
     float: left;
     width: 70%;
-    overflow: hidden;
+    overflow: auto;
     text-align: center;
     
 
@@ -51,7 +52,7 @@ main {                              /*This formats the main section with a 70% w
 aside {                             /*This formats the aside simalar to the main but with the percentage reversed.*/
     float: left;
     width: 30%;
-}
+    }
 footer {                            /*This formats the footer to have max width to take up the entire bottom and formats the boxes to have 3 columns of text.*/
     width: 100%;                    /*This also does background color green, font-size, and colors text white.*/
     max-height: fit-content;
@@ -59,7 +60,7 @@ footer {                            /*This formats the footer to have max width 
     padding: 0;
     overflow: hidden;
     background-color: darkgreen;
-    font-size: x-small;
+    font-size: medium;
     display: inline-flex;
     justify-content: space-around;
     color: white;
@@ -75,6 +76,7 @@ table {                             /*This formats the table to have a darkgreen
     text-align: center;
     height: fit-content;
     width: fit-content;
+    margin: 20px;
 }
 table caption {                     /*This formats the caption to have darkgreen background, white text, and bold larger text.*/
     background-color: darkgreen;
